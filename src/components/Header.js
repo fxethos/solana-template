@@ -36,7 +36,7 @@ NavBtn
       },[])
       return(
     <>
-        <IconContext.Provider value={{color:"#131313"}}>
+        <IconContext.Provider value={{color:"#FFFFFF"}}>
         <Nav active={scroll} click={click}  >
         
         <NavbarContainer >
