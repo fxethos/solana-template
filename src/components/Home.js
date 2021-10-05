@@ -6,7 +6,7 @@ import RetroLogo from "../images/Retro logo2.png"
 const Home = () => {
     return (
     <HomeContainer>
-        
+
     <HomeContainertext>
     
        <h1>AMERICAN STYLE OPTIONS, ANYTIME, ANYWHERE</h1>
@@ -43,10 +43,10 @@ export default Home
 
 const HomeContainer = styled.div `
 display:flex;
-justify-content: center,
-align-items: center,
-position:relative;
+justify-content: center;
+align-items: center;
 height:140vh;
+width:100% !important;
 @media screen and (max-width:2560px){
     
   height:55vh;
@@ -118,7 +118,8 @@ letter-spacing:5px;
  
 `
 const HomeContainerimg =styled.div `
-
+width:2000px !important;
+height:100%;
 @media screen and (max-width:768px){
   width:100% !important;
 height:100%;

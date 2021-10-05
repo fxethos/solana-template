@@ -10,7 +10,7 @@ font-family: 'Manrope', sans-serif;
 position:sticky !important;
 top:0;
 z-index:999;
-width:100%;
+width:100% !important;
 @media screen and (max-width:425px){
  transition:0.8s all ease;
  position:sticky !important;
@@ -24,8 +24,7 @@ align-items:center;
 justify-content:space-between;
 height:80px;
 z-index:1;
-width:100%;
-max-width:100%;
+width:100% !important;
 @media screen and (max-width:425px){
       position:sticky !important;
     width:100% !important;

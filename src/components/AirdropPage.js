@@ -4,7 +4,7 @@ import Joystick from "../images/Joystick.png"
 const AirdropPage = () => {
     return (
         <PageContainer>
-        
+       
         <PageContainertext>
         
            OPTIONS AIRDROP
@@ -33,7 +33,7 @@ position:relative;
 height:100vh;
 flex-direction:row;
 width:100%;
-@media screen and (max-width:2560px){
+@media screen and (max-width:2560px ){
     
   height:50vh;
 }
@@ -109,12 +109,12 @@ padding-left:12rem ;
 const PageContainerimg =styled.div `
 
 display:flex;
-padding-right:2.5rem ;
+width:2200px;
 @media screen and (max-width:2560px){
-  padding-right:35rem ;
+
 }
 @media screen and (max-width:1440px){
-  padding-right:2.5rem ;
+ 
 }
 @media screen and (max-width:768px){
   width:100% !important;

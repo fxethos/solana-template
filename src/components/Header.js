@@ -3,6 +3,7 @@ import { FaBars,FaTimes } from "react-icons/fa"
 import companyLogo from "../images/logo.png"
 import { useEffect,useState } from "react"
 import { IconContext } from "react-icons/lib"
+
 import {
       MobileIcon,
       Nav,
@@ -37,6 +38,7 @@ NavBtn
       return(
     <>
         <IconContext.Provider value={{color:"#FFFFFF"}}>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         <Nav active={scroll} click={click}  >
         
         <NavbarContainer >

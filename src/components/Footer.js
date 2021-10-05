@@ -9,6 +9,7 @@ const Footer = () => {
     return (
         <Footers>
             <Footer1>made by mithraiclabs  |  contact form  |  docs  |  careers</Footer1>
+
             <Footer2>
             <span><img src ={Twitter} alt="Twitter"/> </span>
             <span><img src ={Github} alt="Github"/> </span>
@@ -27,7 +28,7 @@ text-align: center;
 background-color:transparent;
 align-items:center;
 justify-content:center;
-
+ 
 `
 
 const Footer1=styled.div`

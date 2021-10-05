@@ -5,6 +5,7 @@ import cube from "../images/cube.png"
 const BlockChainPage = () => {
     return (
         <Backgroundimg>
+
         <img src ={background} alt="background"/>
         <Lefttext>
         <img src ={cube} alt="cube"/>
@@ -31,9 +32,12 @@ export default BlockChainPage
 const Backgroundimg = styled.div`
 background-position:cover;
 position:relative !important;
-justify-content:center;
+justify-content:space-between;
+align-items:justify;
 display:flex;
 height:100vh;
+width:100% !important;
+flex-direction:row !important;
 @media screen and (max-width:2560px){
   width:100%;
   height:100vh;
@@ -54,7 +58,7 @@ height:100vh;
 @media screen and (max-width:375px){
     width:100%;
     display:flex;
-    height:110vh;
+    height:150vh;
 }
 @media screen and (max-width:320px){
     width:100%;
@@ -75,7 +79,7 @@ background-color:transparent;
   width:100%;
   margin-top:36rem;
   padding-right:85rem;
-  padding-left:55rem;
+  padding-left:35rem;
 }
 @media screen and (max-width:1440px){
   width:100%;
@@ -91,7 +95,7 @@ background-color:transparent;
     padding-left:13rem;
     
   }
-@media screen and (max-width:768px){
+@media screen and (max-width:768px ){
     
     width:100%;
     margin-top:16rem;
@@ -107,13 +111,13 @@ background-color:transparent;
   }
   @media screen and (max-width:375px){
     width:100%;
-    margin-top:4rem;
+    margin-top:2rem;
     padding-right:10rem;
     padding-left:1rem;
   }
   @media screen and (max-width:320px){
     width:100%;
-    margin-top:4rem;
+    margin-top:3.5rem;
     padding-right:8rem;
     padding-left:1rem;
   }
@@ -121,7 +125,6 @@ background-color:transparent;
 
 const Lefttexttitle =styled.div `
 font-size:30px;
-line-height: 100%;
 color: #E4F5FF;
 text-shadow: 0px 0px 20px #0347F7;
 background-color:transparent;
@@ -130,6 +133,19 @@ letter-spacing:2px;
 line-height: 38px;
 align-items: center;
 text-align: right;
+@media screen and (max-width:2560px){
+  line-height: 35px;
+  font-size:55px;
+}
+@media screen and (max-width:1440px){
+  line-height: 35px;
+  font-size:30px;
+}
+
+@media screen and (max-width:1024px){
+  line-height: 30px;
+  font-size:25px;
+}
 @media screen and (max-width:768px){
     line-height: 30px;
     width:100%;
@@ -139,44 +155,45 @@ text-align: right;
   
     width:100%;
     font-size:20px;
-    line-height: 25px;
+    line-height: 22px;
   }
   @media screen and (max-width:375px){
  
     width:100%;
     font-size:15px;
-    line-height: 23px;
+    line-height: 20px;
   }
   @media screen and (max-width:320px){
    
     width:100%;
     font-size:15px;
-    line-height: 21px;
+    line-height: 16px;
   } 
 `
 const Righttext = styled.div`
 position : absolute;
 @media screen and (max-width:2560px){
-
+  width:30%;
   margin-top:20rem;
- 
+ margin-left:80rem;
 }
 @media screen and (max-width:1440px){
-
+  width:30%;
   margin-top:0rem;
- 
+  margin-left:42rem;
 }
 @media screen and (max-width:1024px){
     
   
     margin-top:0rem;
    
-    
+    margin-left:35rem;
   }
-  @media screen and (max-width:768px){
+  @media screen and (max-width:768px ){
     
-  
-    margin-top:0rem;
+    width:35%;
+    margin-left:25rem;
+    margin-top:7rem;
    
     
   }
@@ -184,16 +201,19 @@ position : absolute;
 
     display:block;
     margin-top:2rem;
-    padding:1rem;
     width:100%;
+    margin-left:0rem !important;
   }
   @media screen and (max-width:375px){
     width:100%;
     display:block;
+    margin-top:1.5rem;
+    margin-left:0rem !important;
      }
      @media screen and (max-width:320px){
       width:100%;
         display:block;
+        margin-left:0rem !important;
          }
 `
 const Righttext1 = styled.div`
@@ -219,6 +239,12 @@ background-color:#05044D;
 width:343%;
 letter-spacing:1px;
 box-shadow: 4px -4px 0px #DD3E76, -6px 6px 0px #1D4DC9;
+@media screen and (max-width:2560px){
+  font-size: 35px;
+   }
+   @media screen and (max-width:1440px){
+    font-size: 25px;
+     }
 @media screen and (max-width:1024px){
     margin-top:5rem;
     font-size: 18px;
@@ -261,10 +287,17 @@ margin-top:23rem;
 padding:1rem;
 text-align: left;
 background-color:#05044D;
-width:343%;
+
 line-height: 22.32px;
 letter-spacing:1px;
 box-shadow: 4px -4px 0px #DD3E76, -6px 6px 0px #1D4DC9;
+@media screen and (max-width:2560px){
+  font-size: 25px;
+  line-height: 25.32px;
+   }
+   @media screen and (max-width:1440px){
+    font-size: 15px;
+     }
 @media screen and (max-width:1024px){
     width:272%;
     font-size: 15px;
@@ -288,13 +321,13 @@ box-shadow: 4px -4px 0px #DD3E76, -6px 6px 0px #1D4DC9;
   }
   @media screen and (max-width:375px){
     margin-top:21rem;
-    font-size: 15px;
+    font-size: 13px;
     width:100%;
  
 }
   @media screen and (max-width:320px){
     margin-top:20.5rem;
-    font-size: 15px;
+    font-size: 13px;
     width:100%;
     
 }
@@ -308,10 +341,17 @@ color: #E4F5FF;
 font-family: 'Manrope', sans-serif !important; 
 width:border-box !important;
 background-color:#05044D;
-font-size:15px !important;
+font-size:15px;
 padding:1rem 0;
 
 line-height: 22.32px;
+@media screen and (max-width:2560px){
+  font-size: 25px ;
+  line-height: 25.32px;
+   }
+   @media screen and (max-width:1440px){
+    font-size: 15px;
+     }
 @media screen and (max-width:1024px){
   
     font-size: 15px;
@@ -322,20 +362,34 @@ line-height: 22.32px;
   }
   @media screen and (max-width:768px){
   
-    font-size: 10px;
+    font-size: 15px;
     line-height: 20.32px;
     letter-spacing:1px;
     padding-top:1rem;
   }
   @media screen and (max-width:425px){
   
-    font-size: 11px;
+    font-size: 15px;
    
     letter-spacing:1px;
     
     padding-top:1rem;
    
   }
+
+  @media screen and (max-width:375px){
+
+    font-size: 13px !important;
+    width:100%;
+ 
+}
+  @media screen and (max-width:320px){
+   
+    font-size: 13px;
+ 
+    
+}
+
 `
 
 

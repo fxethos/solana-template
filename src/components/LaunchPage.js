@@ -33,9 +33,14 @@ align-items:center;
 display:flex;
 flex-direction:column;
 height:100vh;
+width:100%;
 @media screen and (max-width:2560px){
     
     height:10vh;
+}
+@media screen and (max-width:768px){
+    
+    height:50vh;
 }
 `
 const Img=styled.div`

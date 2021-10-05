@@ -86,7 +86,7 @@ margin-top:16rem;
 
 const Toptext1head = styled.div`
 font-family: Goldman;
-font-size: 24px;
+font-size: 26px;
 color: #E4F5FF;
 padding:1rem;
 text-align: left;
@@ -95,6 +95,13 @@ width:75%;
 letter-spacing:1px;
 box-shadow: 8px 8px 0px #8BEAFF;
 text-shadow: 0px 0px 20px #0347F7 !important;
+@media screen and (max-width:2560px){
+   font-size: 28px;
+  
+    }
+    @media screen and (max-width:1440px){
+     font-size: 26px;
+      }
 @media screen and (max-width:768px){
    
     width:75%;
@@ -118,10 +125,14 @@ color: #E4F5FF;
 font-family: 'Manrope', sans-serif !important; 
 width:border-box !important;
 background-color:black;
-font-size:15px !important;
+font-size:17px ;
 padding:1rem 0;
 letter-spacing:0px;
 line-height: 22.32px;
+
+    @media screen and (max-width:1440px){
+     font-size: 17px;
+      }
 `
 
 
@@ -161,7 +172,7 @@ margin-top:27rem;
 const Lefttext= styled.div`
 display:flex;
 font-family: Goldman;
-font-size: 15px;
+font-size: 17.5px;
 color: #E4F5FF;
 letter-spacing:2px;
 box-shadow: 8px 8px 0px #8BEAFF;
@@ -212,26 +223,26 @@ margin-left:20rem;
 const Righttext= styled.div`
 display:flex;
 font-family: Goldman;
-font-size: 15px;
+font-size: 17.5px;
 color: #E4F5FF;
 letter-spacing:2px;
 box-shadow: 8px 8px 0px #8BEAFF;
 padding:1rem;
 text-align: left;
 background-color:black;
-width:27%;
+width:25%;
 text-transform: uppercase;
-margin-left:45.5rem;
+
 padding-bottom:1rem;
 
 @media screen and (max-width:2560px){
-   margin-left:56rem;
+   margin-left:64.5rem;
    padding-top:2rem;
    letter-spacing:1px;
     }
     
 @media screen and (max-width:1440px){
-   margin-left:45.5rem;
+   margin-left:47rem;
    padding-top:2rem;
    letter-spacing:1px;
     }
