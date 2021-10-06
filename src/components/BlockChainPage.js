@@ -4,26 +4,25 @@ import background from "../images/Background.png"
 import cube from "../images/cube.png"
 const BlockChainPage = () => {
     return (
-        <Backgroundimg>
-
-        <img src ={background} alt="background"/>
+      <Backgroundimg>
+         <img src ={background} alt="background"/>
         <Lefttext>
-        <img src ={cube} alt="cube"/>
-        <Lefttexttitle>
-        SOLANA BLOCKCHAIN FOUNDATIONS
-        </Lefttexttitle>
+          <img src ={cube} alt="cube"/>
+          <Lefttexttitle>
+           SOLANA BLOCKCHAIN FOUNDATIONS
+          </Lefttexttitle>
         </Lefttext> 
         <Righttext>
-        <Righttext1>
-        <Righttext1head>The options are limitless.
-        <Righttext1para>PsyOptions aims to become one of the foundational DeFi primitives on the Solana blockchain by offering completely trustless American style options for any SPL token.</Righttext1para>
-        </Righttext1head>
-        </Righttext1>
-        <Righttext2>
-        <Righttext2para>Providing this clearing house infrastructure to the Solana ecosystem will allow for increased composability between protocols, helping teams align incentives between themselves, their investors, their community members, and more.</Righttext2para>
-        </Righttext2>
+          <Righttext1>
+            <Righttext1head>The options are limitless.
+            <Righttext1para>PsyOptions aims to become one of the foundational DeFi primitives on the Solana blockchain by offering completely trustless American style options for any SPL token.</Righttext1para>
+            </Righttext1head>
+          </Righttext1>
+          <Righttext2>
+            <Righttext2para>Providing this clearing house infrastructure to the Solana ecosystem will allow for increased composability between protocols, helping teams align incentives between themselves, their investors, their community members, and more.</Righttext2para>
+          </Righttext2>
         </Righttext>
-        </Backgroundimg>
+      </Backgroundimg>
     )
 }
 
@@ -47,34 +46,31 @@ flex-direction:row !important;
   height:100vh;
 }
 @media screen and (max-width:768px){
-    width:100%;
-    
+  width:100%;
 }
 @media screen and (max-width:425px){
-    width:100%;
-    display:flex;
-    height:120vh;
+  width:100%;
+  display:flex;
+  height:120vh;
 }
 @media screen and (max-width:375px){
-    width:100%;
-    display:flex;
-    height:150vh;
+  width:100%;
+  display:flex;
+  height:150vh;
 }
 @media screen and (max-width:320px){
-    width:100%;
-    display:flex;
-    height:110vh;
+  width:100%;
+  display:flex;
+  height:110vh;
 }
 `
-
-
 const Lefttext = styled.div`
-position:absolute;
-text-align: right;
-margin-top:19rem;
-padding-right:45rem;
-padding-left:20rem;
-background-color:transparent;
+  position:absolute;
+  text-align: right;
+  margin-top:19rem;
+  padding-right:45rem;
+  padding-left:20rem;
+  background-color:transparent;
 @media screen and (max-width:2560px){
   width:100%;
   margin-top:36rem;
@@ -88,51 +84,47 @@ background-color:transparent;
   padding-left:20rem;
 }
 @media screen and (max-width:1024px){
-    
-    width:100%;
-    margin-top:12rem;
-    padding-right:33rem;
-    padding-left:13rem;
-    
-  }
+  width:100%;
+  margin-top:12rem;
+  padding-right:33rem;
+  padding-left:13rem;
+}
 @media screen and (max-width:768px ){
-    
-    width:100%;
-    margin-top:16rem;
-    padding-right:27rem;
-    padding-left:1rem;
-    
-  }
+  width:100%;
+  margin-top:16rem;
+  padding-right:27rem;
+  padding-left:1rem;
+}
 @media screen and (max-width:425px){
-    width:100%;
-    margin-top:4rem;
-    padding-right:7rem;
-    padding-left:3rem;
-  }
-  @media screen and (max-width:375px){
-    width:100%;
-    margin-top:2rem;
-    padding-right:10rem;
-    padding-left:1rem;
-  }
-  @media screen and (max-width:320px){
-    width:100%;
-    margin-top:3.5rem;
-    padding-right:8rem;
-    padding-left:1rem;
-  }
+  width:100%;
+  margin-top:4rem;
+  padding-right:7rem;
+  padding-left:3rem;
+}
+@media screen and (max-width:375px){
+  width:100%;
+  margin-top:2rem;
+  padding-right:10rem;
+  padding-left:1rem;
+}
+@media screen and (max-width:320px){
+  width:100%;
+  margin-top:3.5rem;
+  padding-right:8rem;
+  padding-left:1rem;
+}
 `
 
 const Lefttexttitle =styled.div `
-font-size:30px;
-color: #E4F5FF;
-text-shadow: 0px 0px 20px #0347F7;
-background-color:transparent;
-font-family:Goldman,cursive;
-letter-spacing:2px;
-line-height: 38px;
-align-items: center;
-text-align: right;
+  font-size:30px;
+  color: #E4F5FF;
+  text-shadow: 0px 0px 20px #0347F7;
+  background-color:transparent;
+  font-family:Goldman,cursive;
+  letter-spacing:2px;
+  line-height: 38px;
+  align-items: center;
+  text-align: right;
 @media screen and (max-width:2560px){
   line-height: 35px;
   font-size:55px;
@@ -141,41 +133,37 @@ text-align: right;
   line-height: 35px;
   font-size:30px;
 }
-
 @media screen and (max-width:1024px){
   line-height: 30px;
   font-size:25px;
 }
 @media screen and (max-width:768px){
-    line-height: 30px;
-    width:100%;
-    font-size:25px;
-  }
+  line-height: 30px;
+  width:100%;
+  font-size:25px;
+}
 @media screen and (max-width:425px){
-  
-    width:100%;
-    font-size:20px;
-    line-height: 22px;
-  }
-  @media screen and (max-width:375px){
- 
-    width:100%;
-    font-size:15px;
-    line-height: 20px;
-  }
-  @media screen and (max-width:320px){
-   
-    width:100%;
-    font-size:15px;
-    line-height: 16px;
-  } 
+  width:100%;
+  font-size:20px;
+  line-height: 22px;
+}
+@media screen and (max-width:375px){
+  width:100%;
+  font-size:15px;
+  line-height: 20px;
+}
+@media screen and (max-width:320px){
+  width:100%;
+  font-size:15px;
+  line-height: 16px;
+} 
 `
 const Righttext = styled.div`
-position : absolute;
+  position : absolute;
 @media screen and (max-width:2560px){
   width:30%;
   margin-top:20rem;
- margin-left:80rem;
+  margin-left:80rem;
 }
 @media screen and (max-width:1440px){
   width:30%;
@@ -183,213 +171,170 @@ position : absolute;
   margin-left:42rem;
 }
 @media screen and (max-width:1024px){
-    
-  
-    margin-top:0rem;
-   
-    margin-left:35rem;
-  }
-  @media screen and (max-width:768px ){
-    
-    width:35%;
-    margin-left:25rem;
-    margin-top:7rem;
-   
-    
-  }
+  margin-top:0rem;
+  margin-left:35rem;
+}
+@media screen and (max-width:768px ){
+  width:35%;
+  margin-left:25rem;
+  margin-top:7rem;
+}
 @media screen and (max-width:425px){
-
-    display:block;
-    margin-top:2rem;
-    width:100%;
-    margin-left:0rem !important;
-  }
-  @media screen and (max-width:375px){
-    width:100%;
-    display:block;
-    margin-top:1.5rem;
-    margin-left:0rem !important;
-     }
-     @media screen and (max-width:320px){
-      width:100%;
-        display:block;
-        margin-left:0rem !important;
-         }
+  display:block;
+  margin-top:2rem;
+  width:100%;
+  margin-left:0rem !important;
+}
+@media screen and (max-width:375px){
+  width:100%;
+  display:block;
+  margin-top:1.5rem;
+  margin-left:0rem !important;
+}
+@media screen and (max-width:320px){
+  width:100%;
+  display:block;
+  margin-left:0rem !important;
+}
 `
 const Righttext1 = styled.div`
-position : absolute;
-text-align: left;
-background-color:transparent;
-
+  position : absolute;
+  text-align: left;
+  background-color:transparent;
 `
 const Righttext2 = styled.div`
-position : absolute;
-text-align: left;
-background-color:transparent;
+  position : absolute;
+  text-align: left;
+  background-color:transparent;
 `
 const Righttext1head = styled.div`
-font-family: Goldman;
-font-size: 25px;
-color: #E4F5FF;
-margin-top:10rem;
-padding-left:1rem;
-padding-top:1rem;
-text-align: left;
-background-color:#05044D;
-
-letter-spacing:1px;
-box-shadow: 4px -4px 0px #DD3E76, -6px 6px 0px #1D4DC9;
+  font-family: Goldman;
+  font-size: 25px;
+  color: #E4F5FF;
+  margin-top:10rem;
+  padding-left:1rem;
+  padding-top:1rem;
+  text-align: left;
+  background-color:#05044D;
+  letter-spacing:1px;
+  box-shadow: 4px -4px 0px #DD3E76, -6px 6px 0px #1D4DC9;
 @media screen and (max-width:2560px){
   font-size: 35px;
-   }
-   @media screen and (max-width:1440px){
-    font-size: 25px;
-     }
+}
+@media screen and (max-width:1440px){
+  font-size: 25px;
+}
 @media screen and (max-width:1024px){
-    margin-top:5rem;
-    font-size: 18px;
-
-    letter-spacing:2px;
-     }
+  margin-top:5rem;
+  font-size: 18px;
+  letter-spacing:2px;
+}
 @media screen and (max-width:768px){
-    margin-top:5rem;
-    font-size: 17px;
- 
-    letter-spacing:1px;
-       
-    
-  }
+  margin-top:5rem;
+  font-size: 17px;
+  letter-spacing:1px;
+}
 @media screen and (max-width:425px){
-    margin-top:10rem;
-    font-size: 19px;
-    width:100%;
-    letter-spacing:0px;
-   
-       
-  }
-  @media screen and (max-width:375px){
-    margin-top:10rem;
-    font-size: 17px;
-    width:100%;
-    letter-spacing:0px;
-    
-  }
-  @media screen and (max-width:320px){
-    margin-top:9rem;
-    font-size: 17px;
-       
-  }
+  margin-top:10rem;
+  font-size: 19px;
+  width:100%;
+  letter-spacing:0px;
+}
+@media screen and (max-width:375px){
+  margin-top:10rem;
+  font-size: 17px;
+  width:100%;
+  letter-spacing:0px;  
+}
+@media screen and (max-width:320px){
+  margin-top:9rem;
+  font-size: 17px;
+}
 `
 const Righttext2para = styled.div`
-font-family: 'Manrope', sans-serif;
-color: #E4F5FF;
-margin-top:23rem;
-padding:1rem;
-text-align: left;
-background-color:#05044D;
-
-line-height: 22.32px;
-letter-spacing:1px;
-box-shadow: 4px -4px 0px #DD3E76, -6px 6px 0px #1D4DC9;
+  font-family: 'Manrope', sans-serif;
+  color: #E4F5FF;
+  margin-top:23rem;
+  padding:1rem;
+  text-align: left;
+  background-color:#05044D;
+  line-height: 22.32px;
+  letter-spacing:1px;
+  box-shadow: 4px -4px 0px #DD3E76, -6px 6px 0px #1D4DC9;
 @media screen and (max-width:2560px){
   font-size: 25px;
   line-height: 25.32px;
-   }
-   @media screen and (max-width:1440px){
-    font-size: 15px;
-     }
-@media screen and (max-width:1024px){
-   
-    font-size: 15px;
-    
-    line-height: 20.32px;
-    margin-top:18rem;
-  }
-  @media screen and (max-width:768px){
-   
-    font-size: 15px;
-   
-    line-height: 20.32px;
-    margin-top:19rem;
-  }
-  @media screen and (max-width:425px){
-    margin-top:22rem;
-    font-size: 15px;
-    width:100%;
-
-    
-  }
-  @media screen and (max-width:375px){
-    margin-top:21rem;
-    font-size: 13px;
-    width:100%;
- 
 }
-  @media screen and (max-width:320px){
-    margin-top:20.5rem;
-    font-size: 13px;
-    width:100%;
-    
+@media screen and (max-width:1440px){
+  font-size: 15px;
+}
+@media screen and (max-width:1024px){
+  font-size: 15px;
+  line-height: 20.32px;
+  margin-top:18rem;
+}
+@media screen and (max-width:768px){
+  font-size: 15px;
+  line-height: 20.32px;
+  margin-top:19rem;
+}
+@media screen and (max-width:425px){
+  margin-top:22rem;
+  font-size: 15px;
+  width:100%;
+}
+@media screen and (max-width:375px){
+  margin-top:21rem;
+  font-size: 13px;
+  width:100%;
+}
+@media screen and (max-width:320px){
+  margin-top:20.5rem;
+  font-size: 13px;
+  width:100%;
 }
 @media screen and (max-width:280px){
-    margin-top:24rem;
-  
+  margin-top:24rem;
 }
 `
 const Righttext1para = styled.div`
-color: #E4F5FF;
-font-family: 'Manrope', sans-serif !important; 
-width:border-box !important;
-background-color:#05044D;
-font-size:15px;
-padding:1rem 0;
-
-line-height: 22.32px;
+  color: #E4F5FF;
+  font-family: 'Manrope', sans-serif !important; 
+  width:border-box !important;
+  background-color:#05044D;
+  font-size:15px;
+  padding:1rem 0;
+  line-height: 22.32px;
 @media screen and (max-width:2560px){
   font-size: 25px ;
   line-height: 25.32px;
-   }
-   @media screen and (max-width:1440px){
-    font-size: 15px;
-     }
+}
+@media screen and (max-width:1440px){
+  font-size: 15px;
+}
 @media screen and (max-width:1024px){
-  
-    font-size: 15px;
-    
-    letter-spacing:1px;
-    
-    padding-top:1rem;
-  }
-  @media screen and (max-width:768px){
-  
-    font-size: 15px;
-    line-height: 20.32px;
-    letter-spacing:1px;
-    padding-top:1rem;
-  }
-  @media screen and (max-width:425px){
-  
-    font-size: 15px;
-   
-    letter-spacing:1px;
-    
-    padding-top:1rem;
-   
-  }
-
-  @media screen and (max-width:375px){
-
-    font-size: 13px !important;
-    width:100%;
- 
+  font-size: 15px;
+  letter-spacing:1px;
+  padding-top:1rem;
 }
-  @media screen and (max-width:320px){
-   
-    font-size: 13px;
- 
-    
+@media screen and (max-width:768px){
+  font-size: 15px;
+  line-height: 20.32px;
+  letter-spacing:1px;
+  padding-top:1rem;
 }
-
+@media screen and (max-width:425px){
+  font-size: 15px;
+  letter-spacing:1px;
+  padding-top:1rem;
+}
+@media screen and (max-width:375px){
+  font-size: 13px !important;
+  width:100%;
+}
+@media screen and (max-width:320px){
+  font-size: 13px; 
+}
 `
 
 

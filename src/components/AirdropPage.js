@@ -4,21 +4,15 @@ import Joystick from "../images/Joystick.png"
 const AirdropPage = () => {
     return (
         <PageContainer>
-       
-        <PageContainertext>
-        
-           OPTIONS AIRDROP
-          
-          <PageContainertextpara>
+          <PageContainertext>
+                OPTIONS AIRDROP
+            <PageContainertextpara>
                 Increase foundation funding and reduce sell pressure by airdropping options to your community. PsyOptions physically settled options can help align incentives with community and team members while protecting the foundation from opportunistic “supporters”
-          </ PageContainertextpara>
-    
+            </ PageContainertextpara>
           </PageContainertext>
-       
-        <PageContainerimg>
+          <PageContainerimg>
             <img src ={Joystick} alt="Joystick"/> 
-        </PageContainerimg>
-     
+          </PageContainerimg>
         </PageContainer>
     )
 }
@@ -34,35 +28,34 @@ height:100vh;
 flex-direction:row;
 width:100%;
 @media screen and (max-width:2560px ){
-    
   height:50vh;
 }
 @media screen and (max-width:1440px){
-    height:120vh;
- }
+  height:120vh;
+}
 @media screen and (max-width:1024px){
   width:100%;
   display:flex;
-   height:180vh;
+  height:180vh;
  }
 @media screen and (max-width:768px){
   width:100%;
-      display:block;
-    height:130vh;
-    text-align:justify;
+  display:block;
+  height:130vh;
+  text-align:justify;
  }
 @media screen and (max-width:425px){
-    width:100%;
-    display:block;
-   }
-   @media screen and (max-width:375px){
-    width:100%;
-    display:block;
-   }
-   @media screen and (max-width:320px){
-    width:100%;
-    display:block;
-   }
+  width:100%;
+  display:block;
+}
+@media screen and (max-width:375px){
+  width:100%;
+  display:block;
+}
+@media screen and (max-width:320px){
+  width:100%;
+  display:block;
+}
 `
 
 
@@ -110,12 +103,7 @@ const PageContainerimg =styled.div `
 
 display:flex;
 width:2200px;
-@media screen and (max-width:2560px){
 
-}
-@media screen and (max-width:1440px){
- 
-}
 @media screen and (max-width:768px){
   width:100% !important;
   padding:1rem ;
