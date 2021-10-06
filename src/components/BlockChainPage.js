@@ -236,7 +236,7 @@ padding-left:1rem;
 padding-top:1rem;
 text-align: left;
 background-color:#05044D;
-width:343%;
+
 letter-spacing:1px;
 box-shadow: 4px -4px 0px #DD3E76, -6px 6px 0px #1D4DC9;
 @media screen and (max-width:2560px){
@@ -248,13 +248,13 @@ box-shadow: 4px -4px 0px #DD3E76, -6px 6px 0px #1D4DC9;
 @media screen and (max-width:1024px){
     margin-top:5rem;
     font-size: 18px;
-    width:310%;
+
     letter-spacing:2px;
      }
 @media screen and (max-width:768px){
     margin-top:5rem;
     font-size: 17px;
-    width:259%;
+ 
     letter-spacing:1px;
        
     
@@ -299,14 +299,14 @@ box-shadow: 4px -4px 0px #DD3E76, -6px 6px 0px #1D4DC9;
     font-size: 15px;
      }
 @media screen and (max-width:1024px){
-    width:272%;
+   
     font-size: 15px;
     
     line-height: 20.32px;
     margin-top:18rem;
   }
   @media screen and (max-width:768px){
-    width:210%;
+   
     font-size: 15px;
    
     line-height: 20.32px;
