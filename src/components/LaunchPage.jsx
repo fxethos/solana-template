@@ -1,20 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
 import Gradient from "../images/Gradient.png"
+import { HOW, HEDGE, OUR } from "../components/Constants"
 const LaunchPage = () => {
-    return (
+  return (
     <Backimg>
-        <Img><img src ={Gradient} alt="Gradient"/></Img>
-        <Toptext1>
-           <Toptext1head>HOW PSYOPTIONS CAN HELP YOU
-                <Toptext1para>Hedge against volatile crypto currencies with options.</Toptext1para>
-           </Toptext1head>
-          </Toptext1>
-          <NavBtn>
-            <Button1 to="/">Launch our app</Button1>
-          </NavBtn>
+      <Img><img src={Gradient} alt="Gradient" /></Img>
+      <Toptext1>
+        <Toptext1head>{HOW}
+          <Toptext1para>{HEDGE}</Toptext1para>
+        </Toptext1head>
+      </Toptext1>
+      <NavBtn>
+        <Button1 to="/">{OUR}</Button1>
+      </NavBtn>
     </Backimg>
-    )
+  )
 }
 
 export default LaunchPage
@@ -34,7 +35,7 @@ const Backimg = styled.div`
   height:50vh;
 }
 `
-const Img=styled.div`
+const Img = styled.div`
   background-color:#000;
   opacity:0.4;
   filter: blur(2px);
@@ -77,12 +78,12 @@ const NavBtn = styled.div`
   margin-top:10rem;
 }
 `
-const Button1 =styled.button
-`
+const Button1 = styled.button
+  `
   background-color: #8BEAFF;
-  padding:${({big})=>(big ? '8px 10px':'10px 12px')};
+  padding:${({ big }) => (big ? '8px 10px' : '10px 12px')};
   color:black;
-  font-size:${({big})=>(big ? '20px':'16px')};
+  font-size:${({ big }) => (big ? '20px' : '16px')};
   outline:none;
   border:2px solid #8BEAFF;
   min-width:100px;

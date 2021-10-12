@@ -1,25 +1,26 @@
 import React from 'react'
 import styled from 'styled-components'
 import Joystick from "../images/Joystick.png"
+import { OPTIONS, INCREASE } from "../components/Constants"
 const AirdropPage = () => {
-    return (
-        <PageContainer>
-          <PageContainertext>
-                OPTIONS AIRDROP
-            <PageContainertextpara>
-                Increase foundation funding and reduce sell pressure by airdropping options to your community. PsyOptions physically settled options can help align incentives with community and team members while protecting the foundation from opportunistic “supporters”
-            </ PageContainertextpara>
-          </PageContainertext>
-          <PageContainerimg>
-            <img src ={Joystick} alt="Joystick"/> 
-          </PageContainerimg>
-        </PageContainer>
-    )
+  return (
+    <PageContainer>
+      <PageContainertext>
+        {OPTIONS}
+        <PageContainertextpara>
+          {INCREASE}
+        </ PageContainertextpara>
+      </PageContainertext>
+      <PageContainerimg>
+        <img src={Joystick} alt="Joystick" />
+      </PageContainerimg>
+    </PageContainer>
+  )
 }
 
 export default AirdropPage
 
-const PageContainer = styled.div `
+const PageContainer = styled.div`
 display:flex;
 justify-content: center;
 align-items: center;
@@ -59,7 +60,7 @@ width:100%;
 `
 
 
-const PageContainertextpara = styled.div `
+const PageContainertextpara = styled.div`
 
 
 
@@ -69,7 +70,7 @@ line-height: 22.32px;
 font-size:15px;
 letter-spacing:1px;
 `
-const PageContainertext =styled.div `
+const PageContainertext = styled.div`
 
 align-items:center;
 font-size: 25px;
@@ -99,7 +100,7 @@ padding-left:12rem ;
   padding:1rem ;
 }
 `
-const PageContainerimg =styled.div `
+const PageContainerimg = styled.div`
 
 display:flex;
 width:2200px;

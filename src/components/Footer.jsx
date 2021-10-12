@@ -5,30 +5,31 @@ import Twitter from "../images/Twitter.png"
 import Github from "../images/Github.png"
 import Medium from "../images/Medium.png"
 import Discord from "../images/Discord.png"
+import { FOOTER } from "../components/Constants"
 const Footer = () => {
-    return (
-        <Footers>
-            <Footer1>made by mithraiclabs  |  contact form  |  docs  |  careers</Footer1>
-            <Footer2>
-                    <span><img src ={Twitter} alt="Twitter"/> </span>
-                    <span><img src ={Github} alt="Github"/> </span>
-                    <span><img src ={Telegram} alt="Telegram"/> </span>
-                    <span><img src ={Discord} alt="Discord"/> </span>
-                    <span><img src ={Medium} alt="Medium"/> </span>
-            </Footer2>
-        </Footers>
-    )
+  return (
+    <Footers>
+      <Footer1>{FOOTER}</Footer1>
+      <Footer2>
+        <span><img src={Twitter} alt="Twitter" /> </span>
+        <span><img src={Github} alt="Github" /> </span>
+        <span><img src={Telegram} alt="Telegram" /> </span>
+        <span><img src={Discord} alt="Discord" /> </span>
+        <span><img src={Medium} alt="Medium" /> </span>
+      </Footer2>
+    </Footers>
+  )
 }
 
 export default Footer
-const Footers= styled.div`
+const Footers = styled.div`
   position : relative;
   text-align: center;
   background-color:transparent;
   align-items:center;
   justify-content:center;
 `
-const Footer1=styled.div`
+const Footer1 = styled.div`
   margin-top:10rem;
   text-align: center;
   background-color:transparent;
@@ -39,7 +40,7 @@ const Footer1=styled.div`
   letter-spacing:1px;
   font-size:15px;
 `
-const Footer2=styled.div`
+const Footer2 = styled.div`
 
 margin-top:1rem;
 text-align: center;

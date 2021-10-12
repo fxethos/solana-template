@@ -2,28 +2,29 @@ import React from 'react'
 import styled from "styled-components"
 import background from "../images/Background.png"
 import cube from "../images/cube.png"
+import { SOLANA, LIMITLESS, PSYOPTIONS, PROVIDING } from "../components/Constants"
 const BlockChainPage = () => {
-    return (
-      <Backgroundimg>
-         <img src ={background} alt="background"/>
-        <Lefttext>
-          <img src ={cube} alt="cube"/>
-          <Lefttexttitle>
-           SOLANA BLOCKCHAIN FOUNDATIONS
-          </Lefttexttitle>
-        </Lefttext> 
-        <Righttext>
-          <Righttext1>
-            <Righttext1head>The options are limitless.
-            <Righttext1para>PsyOptions aims to become one of the foundational DeFi primitives on the Solana blockchain by offering completely trustless American style options for any SPL token.</Righttext1para>
-            </Righttext1head>
-          </Righttext1>
-          <Righttext2>
-            <Righttext2para>Providing this clearing house infrastructure to the Solana ecosystem will allow for increased composability between protocols, helping teams align incentives between themselves, their investors, their community members, and more.</Righttext2para>
-          </Righttext2>
-        </Righttext>
-      </Backgroundimg>
-    )
+  return (
+    <Backgroundimg>
+      <img src={background} alt="background" />
+      <Lefttext>
+        <img src={cube} alt="cube" />
+        <Lefttexttitle>
+          {SOLANA}
+        </Lefttexttitle>
+      </Lefttext>
+      <Righttext>
+        <Righttext1>
+          <Righttext1head>{LIMITLESS}
+            <Righttext1para>{PSYOPTIONS}</Righttext1para>
+          </Righttext1head>
+        </Righttext1>
+        <Righttext2>
+          <Righttext2para>{PROVIDING}</Righttext2para>
+        </Righttext2>
+      </Righttext>
+    </Backgroundimg>
+  )
 }
 
 export default BlockChainPage
@@ -115,7 +116,7 @@ const Lefttext = styled.div`
 }
 `
 
-const Lefttexttitle =styled.div `
+const Lefttexttitle = styled.div`
   font-size:30px;
   color: #E4F5FF;
   text-shadow: 0px 0px 20px #0347F7;

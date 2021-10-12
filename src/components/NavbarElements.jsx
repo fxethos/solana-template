@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
 import styled from "styled-components";
 
-export const Nav =styled.nav `
+export const Nav = styled.nav`
   background-color: transparent;
   height:80px;
   display:flex;
@@ -17,7 +17,7 @@ export const Nav =styled.nav `
   width:100% !important;
 }
 `
-export const NavbarContainer=styled.div`
+export const NavbarContainer = styled.div`
   display:flex;
   align-items:center;
   justify-content:space-between;
@@ -36,7 +36,7 @@ export const NavLogo = styled(Link)`
   justify-self:self-start;
   margin-left:3rem !important;
 `
-export const MobileIcon= styled.div`
+export const MobileIcon = styled.div`
   display:none;
 @media screen and (max-width:425px){
   display:block;
@@ -62,7 +62,7 @@ export const NavMenu = styled.ul`
   height:60vh;
   position:absolute;
   top:80px;
-  top:${({click})=>(click?"100%":"-1000px")};
+  top:${({ click }) => (click ? "100%" : "-1000px")};
   opacity:1;
   margin-left:0;
   margin-right:0;
@@ -70,13 +70,13 @@ export const NavMenu = styled.ul`
   background:black;
 }
 `
-export const NavItem=styled.li`
+export const NavItem = styled.li`
   height:80px;
 @media screen and (max-width:425px){
   width:100%;
 }
 `
-export const NavLinks=styled(Link)`
+export const NavLinks = styled(Link)`
   color:#8BEAFF;
   display:flex;
   text-decoration:none;
@@ -95,16 +95,16 @@ export const NavLinks=styled(Link)`
   padding:0;
 }
 `
-export const NavBtn=styled.div`
+export const NavBtn = styled.div`
   display:block;
   align-items: center;
-  margin-right:0rem !important;
+  margin-right:0.5rem !important;
   background-color:black;
   color: #8BEAFF;
   font-family: 'Manrope', sans-serif;
-  background:${({primary})=>(primary ? '#8BEAFF': 'transparent')};
-  padding:${({big})=>(big ? '16px 40px':'10px 32px')};
-  font-size:${({big})=>(big ? '20px':'16px')};
+  background:${({ primary }) => (primary ? '#8BEAFF' : 'transparent')};
+  padding:${({ big }) => (big ? '16px 40px' : '10px 32px')};
+  font-size:${({ big }) => (big ? '20px' : '16px')};
   border:2px solid #8BEAFF;
   cursor:pointer;
   text-decoration:none;
@@ -112,7 +112,7 @@ export const NavBtn=styled.div`
   border-radius:4px;
   font-family: 'Manrope', sans-serif;
 &: hover{
-  background:${({primary})=>(primary ? 'transparent': '#8BEAFF')};
+  background:${({ primary }) => (primary ? 'transparent' : '#8BEAFF')};
   color:black;
   transform:translate(-2px);
 }

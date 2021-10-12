@@ -1,27 +1,28 @@
 import React from 'react'
 import styled from "styled-components"
 import background from "../images/bg.jpg"
+import { MANAGEMENT, STRATEGY, GREATER, GENERATING } from "../components/Constants"
 const TreasuryPage = () => {
-    return (
-   <Backimg>
-         <img src ={background} alt="background"/>
+  return (
+    <Backimg>
+      <img src={background} alt="background" />
       <Toptext1>
-         <Toptext1head>TREASURY MANAGEMENT
-            <Toptext1para>PsyOptions can be a lucrative strategy for treasury management. Partner with us to make liquid option markets on your token. We can tailor an appropriate strategy to your needs that focuses on:</Toptext1para>
-         </Toptext1head>
+        <Toptext1head>{MANAGEMENT}
+          <Toptext1para>{STRATEGY}</Toptext1para>
+        </Toptext1head>
       </Toptext1>
       <Secondtext>
-         <Lefttext>Greater decentralize your token holders as speculators or other participants exercise option contracts.</Lefttext>
+        <Lefttext>{GREATER}</Lefttext>
       </Secondtext>
       <Secondtext>
-        <Righttext>Generating residual funding through premiums collected and exercises made</Righttext>
-     </Secondtext>
-   </Backimg>
-    )
+        <Righttext>{GENERATING}</Righttext>
+      </Secondtext>
+    </Backimg>
+  )
 }
 
 export default TreasuryPage
-const Backimg=styled.div`
+const Backimg = styled.div`
   position:relative;
   background-size: cover;
   justify-content:space-between;
@@ -149,7 +150,7 @@ const Secondtext = styled.div`
   margin-top:20rem;
 }
 `
-const Lefttext= styled.div`
+const Lefttext = styled.div`
   display:flex;
   font-family: Goldman;
   font-size: 17.5px;
@@ -197,7 +198,7 @@ const Lefttext= styled.div`
   letter-spacing:1px;
 }
 `
-const Righttext= styled.div`
+const Righttext = styled.div`
   display:flex;
   font-family: Goldman;
   font-size: 17.5px;
