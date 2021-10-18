@@ -6,17 +6,17 @@ const TreasuryPage = () => {
   return (
     <Backimg>
       <img src={background} alt="background" />
+      <Text>
       <Toptext1>
         <Toptext1head>{MANAGEMENT}
           <Toptext1para>{STRATEGY}</Toptext1para>
         </Toptext1head>
-      </Toptext1>
+      </Toptext1><br></br>
       <Secondtext>
         <Lefttext>{GREATER}</Lefttext>
+        <Lefttext>{GENERATING}</Lefttext>
       </Secondtext>
-      <Secondtext>
-        <Righttext>{GENERATING}</Righttext>
-      </Secondtext>
+      </Text>
     </Backimg>
   )
 }
@@ -25,229 +25,96 @@ export default TreasuryPage
 const Backimg = styled.div`
   position:relative;
   background-size: cover;
-  justify-content:space-between;
+  justify-content:center;
   display:flex;
-  flex-direction:column;
-  align-items:center;
-@media screen and (max-width:2560px){
-  height:75vh;
-}
-@media screen and (max-width:1440px){
-  height:110vh;
-}
-@media screen and (max-width:1024px){
-  height:120vh;
-}
+  height:100% !important;
+  width:100%;
+  @media screen and (max-width:425px){
+    height:80vh !important;
+  }
+`
+const Text = styled.div`
+position : absolute;
+background-color:transparent;
+display:flex;
+flex-direction:column !important;
+justify-content:space-between !important;
+align-items:center !important;
 `
 const Toptext1 = styled.div`
-  position : absolute;
-  text-align: left;
   background-color:transparent;
-  align-items:center;
-  justify-content:center;
-  margin-left:20rem;
-  margin-top:16rem;
-@media screen and (max-width:2560px){
-  margin-left:20rem;
-  margin-top:25rem;
-}
-@media screen and (max-width:1440px){
-  margin-left:20rem;
-  margin-top:16rem;
-}
-@media screen and (max-width:1024px){
-  margin-left:12rem;
-  margin-top:12rem;
-}
-@media screen and (max-width:768px){
-  margin-left:10rem;
-  margin-top:5rem;
-}
- @media screen and (max-width:425px){
-  margin-left:0rem;
-  width:100%;
-  margin-top:2rem;
-}
-@media screen and (max-width:375px){
-  margin-left:0rem;
-  width:100%;
-  margin-top:2rem;
-}
-@media screen and (max-width:320px){
-  margin-left:0rem;
-  width:100%;
-  margin-top:2rem;
-}
+  letter-spacing:1px;
+  box-sizing:border-box;
+  padding:16% 20%;
+  @media screen and (max-width:768px){
+    padding:10% 15%;
+  }
+  @media screen and (max-width:425px){
+    padding:5% 1%;
+    width:100%;
+  }
 `
 const Toptext1head = styled.div`
   font-family: Goldman;
   font-size: 26px;
   color: #E4F5FF;
-  padding:1rem;
   text-align: left;
-  background-color:black;
-  width:75%;
-  letter-spacing:1px;
-  box-shadow: 8px 8px 0px #8BEAFF;
   text-shadow: 0px 0px 20px #0347F7 !important;
-@media screen and (max-width:2560px){
-  font-size: 28px;
-}
-@media screen and (max-width:1440px){
-  font-size: 26px;
-}
-@media screen and (max-width:768px){
-  width:75%;
-}
-@media screen and (max-width:425px){
-  width:100%;
-}
-@media screen and (max-width:375px){
-  width:100%;
-}
-@media screen and (max-width:320px){
-  width:100%;
-}
+  box-shadow: 3px 3px 0px #8BEAFF;
+  padding:1%;
 `
 const Toptext1para = styled.div`
   color: #E4F5FF;
   font-family: 'Manrope', sans-serif !important; 
-  width:border-box !important;
-  background-color:black;
   font-size:17px ;
-  padding:1rem 0;
-  letter-spacing:0px;
   line-height: 22.32px;
-@media screen and (max-width:1440px){
-  font-size: 17px;
-}
 `
 const Secondtext = styled.div`
   position : absolute;
-  margin-top:27rem;
   background-color:transparent;
   display:flex;
   flex-direction:row;
-@media screen and (max-width:2560px){
-  margin-top:35rem;
-}
-@media screen and (max-width:1440px){
-  margin-top:27rem;
-}
-@media screen and (max-width:1024px){
-  margin-top:25rem;
-}
+  align-items:center !important;
+  justify-content:space-between !important;
+  letter-spacing:1px;
+  box-sizing:border-box;
+  flex:0.5 !important;
+padding:28% 20%;
 @media screen and (max-width:768px){
-  margin-top:18rem;
+  padding:30% 15%;
 }
 @media screen and (max-width:425px){
-  margin-top:16rem;
+  padding:45% 1%;
+  width:100%;
 }
 @media screen and (max-width:375px){
-  margin-top:20rem;
+  padding:60% 1%;
+  width:100%;
 }
 @media screen and (max-width:320px){
-  margin-top:20rem;
+  padding:70% 1%;
+  width:100%;
 }
 `
 const Lefttext = styled.div`
   display:flex;
   font-family: Goldman;
-  font-size: 17.5px;
+  font-size: 15.5px;
   color: #E4F5FF;
   letter-spacing:2px;
-  box-shadow: 8px 8px 0px #8BEAFF;
-  padding:1rem;
+  box-shadow: 3px 3px 0px #8BEAFF;
+  padding:1%;
   text-align: left;
   background-color:black;
-  width:26%;
+  width:48%;
   text-transform: uppercase;
-  margin-left:20rem;
-@media screen and (max-width:2560px){
-  margin-left:18rem;
-}
-@media screen and (max-width:1440px){
-  margin-left:20rem;
-}
-@media screen and (max-width:1024px){
-  margin-left:12rem;
-  padding-top:1rem;
-  letter-spacing:1px;
-}
-@media screen and (max-width:768px){
-  margin-left:10rem;
-  padding-top:0rem;
-  letter-spacing:1px;
-}
+
 @media screen and (max-width:425px){
-  padding-top:0rem;
   width:50%;
   letter-spacing:1px;
-  margin-left:0rem;
+  font-size: 13.5px;
 }
-@media screen and (max-width:375px){
-  margin-left:0rem;
-  padding-top:0rem;
-  width:50%;
-  letter-spacing:1px;
-}
-@media screen and (max-width:320px){
-  margin-left:0rem;
-  padding-top:0rem;
-  width:50%;
-  letter-spacing:1px;
-}
+
 `
-const Righttext = styled.div`
-  display:flex;
-  font-family: Goldman;
-  font-size: 17.5px;
-  color: #E4F5FF;
-  letter-spacing:2px;
-  box-shadow: 8px 8px 0px #8BEAFF;
-  padding:1rem;
-  text-align: left;
-  background-color:black;
-  width:25%;
-  text-transform: uppercase;
-  padding-bottom:1rem;
-@media screen and (max-width:2560px){
-  margin-left:64.5rem;
-  padding-top:2rem;
-  letter-spacing:1px;
-}
-  
-@media screen and (max-width:1440px){
-  margin-left:47rem;
-  padding-top:2rem;
-  letter-spacing:1px;
-}
-@media screen and (max-width:1024px){
-  margin-left:33rem;
-  padding-top:2rem;
-  letter-spacing:1px;
-}
-@media screen and (max-width:768px){
-  margin-left:25rem;
-  padding-top:0rem;
-  letter-spacing:1px;
-}
-@media screen and (max-width:425px){
-  margin-left:14rem;
-  padding-top:0rem;
-  width:46%;
-  letter-spacing:1px;
-}
-@media screen and (max-width:375px){
-  margin-left:12.5rem;
-  padding-top:0rem;
-  width:46%;
-  letter-spacing:1px;
-}
-@media screen and (max-width:320px){
-  margin-left:11rem;
-  padding-top:0rem;
-  width:44%;
-  letter-spacing:1px;
-}
-`
+
+

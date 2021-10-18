@@ -10,30 +10,24 @@ const LaunchPage = () => {
         <Toptext1head>{HOW}
           <Toptext1para>{HEDGE}</Toptext1para>
         </Toptext1head>
-      </Toptext1>
-      <NavBtn>
+        <NavBtn>
         <Button1 to="/">{OUR}</Button1>
       </NavBtn>
-    </Backimg>
+      </Toptext1>
+   </Backimg>
   )
 }
 
 export default LaunchPage
 const Backimg = styled.div`
   position:relative;
-  background-size: cover;
   justify-content:center;
   align-items:center;
-  display:flex;
   flex-direction:column;
-  height:100vh;
+  display:flex;
+  height:100%;
   width:100%;
-@media screen and (max-width:2560px){
-  height:10vh;
-}
-@media screen and (max-width:768px){
-  height:50vh;
-}
+margin:5% 0;
 `
 const Img = styled.div`
   background-color:#000;
@@ -66,17 +60,15 @@ const Toptext1para = styled.div`
   padding:1rem;
 `
 const NavBtn = styled.div`
-  position : absolute;
+  
   text-align: center;
   background-color:transparent;
   align-items:center;
   justify-content:center;
   cursor:pointer;
   font-family: 'Manrope', sans-serif;
-  margin-top:8rem;
-@media screen and (max-width:425px){
-  margin-top:10rem;
-}
+ 
+
 `
 const Button1 = styled.button
   `
@@ -91,6 +83,8 @@ const Button1 = styled.button
   text-decoration:none;
   transition: 0.3s !important;
   border-radius:4px;
+  align-items:center;
+  justify-content:center;
   font-family: 'Manrope', sans-serif;
 &: hover{
   background:black;

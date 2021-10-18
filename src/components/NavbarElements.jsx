@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
   background-color: transparent;
-  height:80px;
+  height:100%;
   display:flex;
   font-size:1rem;
   font-family: 'Manrope', sans-serif;   
@@ -11,30 +11,21 @@ export const Nav = styled.nav`
   top:0;
   z-index:999;
   width:100% !important;
-@media screen and (max-width:425px){
-  transition:0.8s all ease;
-  position:sticky !important;
-  width:100% !important;
-}
+  @media screen and (max-width:425px){
+    transition:0.8s all ease;
+  }
 `
 export const NavbarContainer = styled.div`
   display:flex;
   align-items:center;
-  justify-content:space-between;
-  height:80px;
-  z-index:1;
+  justify-content:space-between !important;
   width:100% !important;
-@media screen and (max-width:425px){
-  position:sticky !important;
-  width:100% !important;
-}
-`
+ `
 export const NavLogo = styled(Link)`
-  align-items:left;
-  padding:1rem 0rem;
-  color:white;
+
+  padding:2% ;
   justify-self:self-start;
-  margin-left:3rem !important;
+
 `
 export const MobileIcon = styled.div`
   display:none;
@@ -43,8 +34,8 @@ export const MobileIcon = styled.div`
   position:absolute;
   top:0;
   right:0 ;
-  transform:translate(-100%,60%);
-  font-size:2.5rem;
+  transform:translate(-50%,60%);
+  font-size:2rem;
   cursor:pointer;
   color: white !important;
 }
@@ -55,7 +46,7 @@ export const NavMenu = styled.ul`
   justify-content:center;
   list-style:none;
   text-align:center;
-  margin-left:2rem;
+
 @media screen and (max-width:425px){
   flex-direction:column;
   width:100%;
@@ -64,14 +55,12 @@ export const NavMenu = styled.ul`
   top:80px;
   top:${({ click }) => (click ? "100%" : "-1000px")};
   opacity:1;
-  margin-left:0;
-  margin-right:0;
   transition: all 0.2s ease;
   background:black;
 }
 `
 export const NavItem = styled.li`
-  height:80px;
+height:100%;
 @media screen and (max-width:425px){
   width:100%;
 }
@@ -82,8 +71,7 @@ export const NavLinks = styled(Link)`
   text-decoration:none;
   align-items:center;
   justify-content:center;
-  padding-top:2rem;
-  padding-right:3rem;
+  padding:2rem;
 &:hover{
   color:white;
   transform:translate(-2px); 
@@ -98,7 +86,7 @@ export const NavLinks = styled(Link)`
 export const NavBtn = styled.div`
   display:block;
   align-items: center;
-  margin-right:0.5rem !important;
+  margin-right:0.7rem !important;
   background-color:black;
   color: #8BEAFF;
   font-family: 'Manrope', sans-serif;
@@ -118,6 +106,6 @@ export const NavBtn = styled.div`
 }
  @media screen and (max-width:425px){
   margin-bottom:2rem;
-  width:50%;
+ 
 }
 `

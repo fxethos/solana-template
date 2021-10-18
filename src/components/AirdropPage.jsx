@@ -16,113 +16,55 @@ const AirdropPage = () => {
       </PageContainerimg>
     </PageContainer>
   )
+
 }
 
 export default AirdropPage
 
 const PageContainer = styled.div`
 display:flex;
-justify-content: center;
-align-items: center;
-position:relative;
-height:100vh;
+justify-content: center !important;
+align-items: center !important;
+height:100%;
 flex-direction:row;
 width:100%;
-@media screen and (max-width:2560px ){
-  height:50vh;
-}
-@media screen and (max-width:1440px){
-  height:120vh;
-}
-@media screen and (max-width:1024px){
-  width:100%;
-  display:flex;
-  height:180vh;
- }
+padding:5%;
 @media screen and (max-width:768px){
   width:100%;
-  display:block;
-  height:130vh;
   text-align:justify;
+  flex-direction:column;
  }
-@media screen and (max-width:425px){
-  width:100%;
-  display:block;
-}
-@media screen and (max-width:375px){
-  width:100%;
-  display:block;
-}
-@media screen and (max-width:320px){
-  width:100%;
-  display:block;
-}
+
 `
 
 
 const PageContainertextpara = styled.div`
-
-
-
 color: #8BEAFF !important;
 font-family: 'Manrope', sans-serif !important;
 line-height: 22.32px;
 font-size:15px;
 letter-spacing:1px;
+
 `
 const PageContainertext = styled.div`
 
-align-items:center;
 font-size: 25px;
 line-height: 200%;
 color: #E4F5FF;
 text-shadow: 0px 0px 20px #0347F7;
-padding-top:6rem ;
-padding-left:12rem ;
 font-family:Goldman,cursive;
 letter-spacing:2px;
-@media screen and (max-width:2560px){
-  padding-top:1rem ;
-  padding-left:42rem ;
-}
-@media screen and (max-width:1440px){
-  padding-top:6rem ;
-padding-left:12rem ;
-}
-@media screen and (max-width:768px){
-  width:100%;
-  font-size: 22px;
-  padding:1rem ;
-}
-@media screen and (max-width:425px){
-  width:100%;
-  font-size: 18px;
-  padding:1rem ;
-}
+flex:0.4 !important ;
+justify-content:center;
+align-items:center;
 `
 const PageContainerimg = styled.div`
-
 display:flex;
-width:2200px;
-
-@media screen and (max-width:768px){
-  width:100% !important;
-  padding:1rem ;
-
- }
-@media screen and (max-width:425px){
-  width:100% !important;
-  padding:1rem ;
-
-  }
-  @media screen and (max-width:375px){
-    width:100% !important;
-   
-   }
-   @media screen and (max-width:320px){
-    width:100% !important;
- 
-      }
+width:100%;
+height:100%;
+flex:0.4 !important ;
+justify-content:center;
+align-items:center;
 `
 
 

@@ -23,28 +23,25 @@ const Footer = () => {
 
 export default Footer
 const Footers = styled.div`
-  position : relative;
   text-align: center;
   background-color:transparent;
-  align-items:center;
   justify-content:center;
-`
-const Footer1 = styled.div`
-  margin-top:10rem;
-  text-align: center;
-  background-color:transparent;
-  align-items:center;
-  justify-content:center;
+  height:100%;
+  width:100%;
+  bottom:0 !important;
+  letter-spacing:1rem;
+  font-size:15px;
   color: #8BEAFF !important;
   font-family: 'Manrope', sans-serif;
-  letter-spacing:1px;
-  font-size:15px;
+`
+const Footer1 = styled.div`
+  
+letter-spacing:1px
+  
 `
 const Footer2 = styled.div`
 
-margin-top:1rem;
-text-align: center;
-align-items:center;
-justify-content:center;
-letter-spacing:1rem;
+margin-top:1%;
+ 
+
 `
