@@ -2,7 +2,7 @@ import { Link } from "gatsby";
 import styled from "styled-components";
 
 export const Nav = styled.nav`
-  background-color: transparent;
+  background-color: black;
   height:100%;
   display:flex;
   font-size:1rem;
@@ -11,22 +11,23 @@ export const Nav = styled.nav`
   top:0;
   z-index:999;
   width:100% !important;
+  margin-right:0px !important;
+  display:flex;
+  align-items:center;
+  width:100% !important;
+  margin-right:0px !important;
   @media screen and (max-width:425px){
     transition:0.8s all ease;
   }
 `
-export const NavbarContainer = styled.div`
-  display:flex;
-  align-items:center;
-  justify-content:space-between !important;
-  width:100% !important;
- `
+
 export const NavLogo = styled(Link)`
 
   padding:2% ;
   justify-self:self-start;
 
 `
+
 export const MobileIcon = styled.div`
   display:none;
 @media screen and (max-width:425px){
@@ -42,11 +43,11 @@ export const MobileIcon = styled.div`
 `
 export const NavMenu = styled.ul`
   display:flex;
-  align-items:center;
-  justify-content:center;
   list-style:none;
   text-align:center;
-
+  align-items:center;
+  justify-content:center !important;
+  width:100% !important;
 @media screen and (max-width:425px){
   flex-direction:column;
   width:100%;
@@ -59,10 +60,20 @@ export const NavMenu = styled.ul`
   background:black;
 }
 `
+export const NavList = styled.div `
+width:100%;
+display:flex;
+@media screen and (max-width:425px){
+  flex-direction:column !important;
+  justify-content:space-between !important;
+}
+`
 export const NavItem = styled.li`
 height:100%;
+justify-content:flex-start !important;
 @media screen and (max-width:425px){
   width:100%;
+  padding:1.5rem 0;
 }
 `
 export const NavLinks = styled(Link)`
@@ -70,7 +81,6 @@ export const NavLinks = styled(Link)`
   display:flex;
   text-decoration:none;
   align-items:center;
-  justify-content:center;
   padding:2rem;
 &:hover{
   color:white;
@@ -84,28 +94,33 @@ export const NavLinks = styled(Link)`
 }
 `
 export const NavBtn = styled.div`
-  display:block;
-  align-items: center;
-  margin-right:0.7rem !important;
+ display:flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ width: 10em;
+  margin-right:1rem !important;
   background-color:black;
   color: #8BEAFF;
   font-family: 'Manrope', sans-serif;
-  background:${({ primary }) => (primary ? '#8BEAFF' : 'transparent')};
-  padding:${({ big }) => (big ? '16px 40px' : '10px 32px')};
-  font-size:${({ big }) => (big ? '20px' : '16px')};
+  background:${({ primary }) => (primary ? '#8BEAFF' : 'black')};
+  padding: 1%;
+  font-size:16px;
   border:2px solid #8BEAFF;
   cursor:pointer;
   text-decoration:none;
   transition: 0.3s !important;
   border-radius:4px;
   font-family: 'Manrope', sans-serif;
+  box-sizing: border-box;
 &: hover{
-  background:${({ primary }) => (primary ? 'transparent' : '#8BEAFF')};
+  background:${({ primary }) => (primary ? 'black' : '#8BEAFF')};
   color:black;
   transform:translate(-2px);
 }
  @media screen and (max-width:425px){
   margin-bottom:2rem;
+  margin-right:0rem !important;
  
 }
 `

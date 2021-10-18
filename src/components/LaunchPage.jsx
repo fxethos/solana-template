@@ -1,25 +1,25 @@
 import React from 'react'
 import styled from 'styled-components'
-import Gradient from "../images/Gradient.png"
+import Gradient from "../assets/images/Gradient.png"
 import { HOW, HEDGE, OUR } from "../components/Constants"
 const LaunchPage = () => {
   return (
-    <Backimg>
+    <BackImg>
       <Img><img src={Gradient} alt="Gradient" /></Img>
-      <Toptext1>
-        <Toptext1head>{HOW}
-          <Toptext1para>{HEDGE}</Toptext1para>
-        </Toptext1head>
+      <TopText1>
+        <TopText1Head>{HOW}
+          <TopText1Para>{HEDGE}</TopText1Para>
+        </TopText1Head>
         <NavBtn>
         <Button1 to="/">{OUR}</Button1>
       </NavBtn>
-      </Toptext1>
-   </Backimg>
+      </TopText1>
+   </BackImg>
   )
 }
 
 export default LaunchPage
-const Backimg = styled.div`
+const BackImg = styled.div`
   position:relative;
   justify-content:center;
   align-items:center;
@@ -36,14 +36,14 @@ const Img = styled.div`
   background-size: cover;
   text-align:center !important;
 `
-const Toptext1 = styled.div`
+const TopText1 = styled.div`
   position : absolute;
   text-align: center;
   background-color:transparent;
   align-items:center;
   justify-content:center;
 `
-const Toptext1head = styled.div`
+const TopText1Head = styled.div`
   font-family: Goldman;
   font-size: 25px;
   color: #E4F5FF;
@@ -51,7 +51,7 @@ const Toptext1head = styled.div`
   background-color:transparent;
   letter-spacing:2px;
 `
-const Toptext1para = styled.div`
+const TopText1Para = styled.div`
   color: #8BEAFF !important;
   font-family: 'Manrope', sans-serif !important; 
   width:border-box !important;

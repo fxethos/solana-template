@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import Telegram from "../images/Telegram.png"
-import Twitter from "../images/Twitter.png"
-import Github from "../images/Github.png"
-import Medium from "../images/Medium.png"
-import Discord from "../images/Discord.png"
+import Telegram from "../assets/images/Telegram.png"
+import Twitter from "../assets/images/Twitter.png"
+import Github from "../assets/images/Github.png"
+import Medium from "../assets/images/Medium.png"
+import Discord from "../assets/images/Discord.png"
 import { FOOTER } from "../components/Constants"
 const Footer = () => {
   return (

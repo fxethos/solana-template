@@ -1,9 +1,9 @@
 import * as React from "react"
 import { FaBars, FaTimes } from "react-icons/fa"
-import companyLogo from "../images/logo.png"
+import companyLogo from "../assets/images/logo.png"
 import { useEffect, useState } from "react"
 import { IconContext } from "react-icons/lib"
-import { MobileIcon, Nav, NavbarContainer, NavItem, NavLinks, NavLogo, NavMenu, NavBtn } from "./NavbarElements"
+import { MobileIcon, Nav, NavList, NavItem, NavLinks, NavLogo, NavMenu, NavBtn } from "./NavbarElements"
 import { MARKETS, PORTFOLIO, FAUCETS, DOCS, LAUNCHAPP } from "../components/Constants"
 const Header = () => {
   const [click, setClick] = useState(false)
@@ -25,16 +25,15 @@ const Header = () => {
   return (
     <>
       <IconContext.Provider value={{ color: "#FFFFFF" }}>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         <Nav active={scroll} click={click}  >
-          <NavbarContainer >
-            <NavLogo to="/" onClick={closeMobileMenu}>
-              <img src={companyLogo} alt="logo" />
-            </NavLogo>
-            <MobileIcon onClick={handleClick}>
-              {click ? <FaTimes /> : <FaBars />}
-            </MobileIcon>
-            <NavMenu onClick={handleClick} click={click}>
+          <NavLogo to="/" onClick={closeMobileMenu}>
+            <img src={companyLogo} alt="logo" />
+          </NavLogo>
+          <MobileIcon onClick={handleClick}>
+            {click ? <FaTimes /> : <FaBars />}
+          </MobileIcon>
+          <NavMenu onClick={handleClick} click={click}>
+            <NavList>
               <NavItem>
                 <NavLinks to="/">{MARKETS}</NavLinks>
               </NavItem>
@@ -47,11 +46,11 @@ const Header = () => {
               <NavItem>
                 <NavLinks to="/">{DOCS}</NavLinks>
               </NavItem>
-              <NavBtn>
-                {LAUNCHAPP}
-              </NavBtn>
-            </NavMenu>
-          </NavbarContainer>
+            </NavList>
+            <NavBtn>
+              {LAUNCHAPP}
+            </NavBtn>
+          </NavMenu>
         </Nav>
       </IconContext.Provider >
     </>

@@ -1,15 +1,15 @@
 import React from 'react'
 import styled from "styled-components"
-import RetroLogo from "../images/Retro logo2.png"
+import RetroLogo from "../assets/images/Retro logo2.png"
 import { AMERICAN, TRADE, START, READ } from "../components/Constants"
 const Home = () => {
   return (
     <HomeContainer>
-      <HomeContainertext>
+      <HomeContainerText>
         <h1>{AMERICAN}</h1>
-        <HomeContainertextpara>
+        <HomeContainerTextPara>
           <div>{TRADE}</div>
-        </HomeContainertextpara>
+        </HomeContainerTextPara>
         <div>
           <span>
             <NavBtn>
@@ -18,10 +18,10 @@ const Home = () => {
             </NavBtn>
           </span>
         </div>
-      </HomeContainertext>
-      <HomeContainerimg>
+      </HomeContainerText>
+      <HomeContainerImg>
         <img src={RetroLogo} alt="retrologo" />
-      </HomeContainerimg>
+      </HomeContainerImg>
     </HomeContainer>
   )
 }
@@ -41,7 +41,7 @@ const HomeContainer = styled.div`
  }
 
 `
-const HomeContainertextpara = styled.div`
+const HomeContainerTextPara = styled.div`
   justify-content: center,
   align-items: center,
   color: #E4F5FF;
@@ -55,7 +55,7 @@ const HomeContainertextpara = styled.div`
   font-size:15px;
  }
 `
-const HomeContainertext = styled.div`
+const HomeContainerText = styled.div`
   align-items:center;
   font-size: 32px;
   line-height: 200%;
@@ -71,7 +71,7 @@ const HomeContainertext = styled.div`
 }
  `
 
-const HomeContainerimg = styled.div`
+const HomeContainerImg = styled.div`
   width:100% ;
   height:100%;
   display:flex;

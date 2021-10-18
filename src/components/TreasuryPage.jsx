@@ -1,28 +1,28 @@
 import React from 'react'
 import styled from "styled-components"
-import background from "../images/bg.jpg"
+import background from "../assets/images/bg.jpg"
 import { MANAGEMENT, STRATEGY, GREATER, GENERATING } from "../components/Constants"
 const TreasuryPage = () => {
   return (
-    <Backimg>
+    <BackImg>
       <img src={background} alt="background" />
       <Text>
-      <Toptext1>
-        <Toptext1head>{MANAGEMENT}
-          <Toptext1para>{STRATEGY}</Toptext1para>
-        </Toptext1head>
-      </Toptext1><br></br>
-      <Secondtext>
-        <Lefttext>{GREATER}</Lefttext>
-        <Lefttext>{GENERATING}</Lefttext>
-      </Secondtext>
+      <TopText1>
+        <TopText1Head>{MANAGEMENT}
+          <TopText1Para>{STRATEGY}</TopText1Para>
+        </TopText1Head>
+      </TopText1><br></br>
+      <SecondText>
+        <LeftText>{GREATER}</LeftText>
+        <LeftText>{GENERATING}</LeftText>
+      </SecondText>
       </Text>
-    </Backimg>
+    </BackImg>
   )
 }
 
 export default TreasuryPage
-const Backimg = styled.div`
+const BackImg = styled.div`
   position:relative;
   background-size: cover;
   justify-content:center;
@@ -41,11 +41,11 @@ flex-direction:column !important;
 justify-content:space-between !important;
 align-items:center !important;
 `
-const Toptext1 = styled.div`
+const TopText1 = styled.div`
   background-color:transparent;
   letter-spacing:1px;
   box-sizing:border-box;
-  padding:16% 20%;
+  padding:20% 20%;
   @media screen and (max-width:768px){
     padding:10% 15%;
   }
@@ -54,22 +54,25 @@ const Toptext1 = styled.div`
     width:100%;
   }
 `
-const Toptext1head = styled.div`
+const TopText1Head = styled.div`
   font-family: Goldman;
   font-size: 26px;
   color: #E4F5FF;
   text-align: left;
   text-shadow: 0px 0px 20px #0347F7 !important;
-  box-shadow: 3px 3px 0px #8BEAFF;
-  padding:1%;
+  box-shadow: 4px 4px 0px #8BEAFF;
+  border:1px solid #696969;
+  padding:1% ;
 `
-const Toptext1para = styled.div`
+const TopText1Para = styled.div`
   color: #E4F5FF;
   font-family: 'Manrope', sans-serif !important; 
   font-size:17px ;
   line-height: 22.32px;
+  padding:2% 0;
+  text-shadow: 0px 0px 0px black !important;
 `
-const Secondtext = styled.div`
+const SecondText = styled.div`
   position : absolute;
   background-color:transparent;
   display:flex;
@@ -79,7 +82,7 @@ const Secondtext = styled.div`
   letter-spacing:1px;
   box-sizing:border-box;
   flex:0.5 !important;
-padding:28% 20%;
+padding:34% 20%;
 @media screen and (max-width:768px){
   padding:30% 15%;
 }
@@ -96,13 +99,14 @@ padding:28% 20%;
   width:100%;
 }
 `
-const Lefttext = styled.div`
+const LeftText = styled.div`
   display:flex;
   font-family: Goldman;
   font-size: 15.5px;
   color: #E4F5FF;
   letter-spacing:2px;
-  box-shadow: 3px 3px 0px #8BEAFF;
+  border:1px solid #696969;
+  box-shadow: 4px 4px 0px #8BEAFF;
   padding:1%;
   text-align: left;
   background-color:black;

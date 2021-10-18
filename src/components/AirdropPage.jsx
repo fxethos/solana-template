@@ -1,22 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
-import Joystick from "../images/Joystick.png"
+import Joystick from "../assets/images/Joystick.png"
 import { OPTIONS, INCREASE } from "../components/Constants"
 const AirdropPage = () => {
   return (
     <PageContainer>
-      <PageContainertext>
+      <PageContainerText>
         {OPTIONS}
-        <PageContainertextpara>
+        <PageContainerTextPara>
           {INCREASE}
-        </ PageContainertextpara>
-      </PageContainertext>
-      <PageContainerimg>
+        </ PageContainerTextPara>
+      </PageContainerText>
+      <PageContainerImg>
         <img src={Joystick} alt="Joystick" />
-      </PageContainerimg>
+      </PageContainerImg>
     </PageContainer>
   )
-
 }
 
 export default AirdropPage
@@ -38,7 +37,7 @@ padding:5%;
 `
 
 
-const PageContainertextpara = styled.div`
+const PageContainerTextPara = styled.div`
 color: #8BEAFF !important;
 font-family: 'Manrope', sans-serif !important;
 line-height: 22.32px;
@@ -46,7 +45,7 @@ font-size:15px;
 letter-spacing:1px;
 
 `
-const PageContainertext = styled.div`
+const PageContainerText = styled.div`
 
 font-size: 25px;
 line-height: 200%;
@@ -58,7 +57,7 @@ flex:0.4 !important ;
 justify-content:center;
 align-items:center;
 `
-const PageContainerimg = styled.div`
+const PageContainerImg = styled.div`
 display:flex;
 width:100%;
 height:100%;
