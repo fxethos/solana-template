@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
-import RetroLogo from "../assets/images/Retro logo2.png"
+import RetroLogo from "../assets/images/Retro logo.png"
 import { AMERICAN, TRADE, START, READ } from "../components/Constants"
 const Home = () => {
   return (
